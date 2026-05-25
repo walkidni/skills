@@ -13,12 +13,7 @@
   - [ ] Approve task-specific implementation approach
   - [ ] Persist Task 1 brainstorm artifact
   - [ ] Expand Task 1 implementation plan
-  - [ ] Write failing preference storage/defaults test
-  - [ ] Run focused red verification
-  - [ ] Create preference key enum/constants
-  - [ ] Create notification preferences table
-  - [ ] Create preference model and user relationship
-  - [ ] Implement default preference resolver
+  - [ ] Add approved implementation steps from Task 1 plan
   - [ ] Run focused green verification
   - [ ] Save implementation notes
   - [ ] Run or mark skipped required reviews per `workflow.md`
@@ -29,12 +24,7 @@
   - [ ] Approve task-specific implementation approach
   - [ ] Persist Task 2 brainstorm artifact
   - [ ] Expand Task 2 implementation plan
-  - [ ] Write failing update API contract test
-  - [ ] Run focused red verification
-  - [ ] Add request validation
-  - [ ] Add update service logic
-  - [ ] Add API route/controller hook
-  - [ ] Add response serialization
+  - [ ] Add approved implementation steps from Task 2 plan
   - [ ] Run focused green verification
   - [ ] Run Task 1 storage regression verification
   - [ ] Save implementation notes

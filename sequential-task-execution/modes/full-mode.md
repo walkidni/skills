@@ -112,10 +112,12 @@ Break the plan into small sequential main tasks. Each main task should have:
 After the user approves the split:
 
 - Add task titles or empty task sections to `plan.md`.
-- Add matching main checklist steps to `todo.md`.
+- Add default workflow checklist steps to `todo.md` for every main task.
 - Create per-task artifact folders and files.
 
-Use `examples/full-mode/todo.md` as the checklist shape. Do not use a one-line-per-task todo for Full Mode. Each main task must expand into workflow checklist items. When the approved task plan has multiple implementation steps, mirror those granular implementation steps in `todo.md`; do not collapse them into a single `Implement behavior` item.
+Use `examples/full-mode/todo.md` as the checklist shape. Do not use a one-line-per-task todo for Full Mode. Each main task must expand into workflow checklist items after the split is approved. At this stage, use placeholders such as `Add approved implementation steps from Task N plan`; do not invent granular implementation steps before task-specific brainstorming is approved.
+
+After the task-specific approach is approved and persisted into `plan.md`, replace the implementation-step placeholder in `todo.md` with the granular implementation steps from the approved plan. When the approved task plan has multiple implementation steps, mirror those steps in `todo.md`; do not collapse them into a single `Implement behavior` item.
 
 Use the anonymous top-level examples in `examples/full-mode/` as file-shape references for `design.md`, `plan.md`, `todo.md`, `history.md`, and `workflow.md`.
 
@@ -150,7 +152,7 @@ For each main task:
 2. Wait for explicit user approval of the task-specific implementation approach.
 3. Only after approval, save the approved brainstorm to `artifacts/task-XX/brainstorm.md`.
 4. Persist the approved implementation plan into the task section of `plan.md` using writing-plans style: exact file paths, complete code where appropriate, and exact commands. Do not start implementation until this is written.
-5. Add the approved task implementation steps as granular checklist items to `todo.md` so progress is trackable. If implementation has multiple concrete steps, each step must have its own checklist item.
+5. Replace that task's implementation placeholder in `todo.md` with the approved task implementation steps as granular checklist items. If implementation has multiple concrete steps, each step must have its own checklist item.
 6. Write the failing test first.
 7. Implement with the main agent.
 8. Save implementation notes to `artifacts/task-XX/implementation-notes.md`.
