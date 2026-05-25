@@ -115,6 +115,10 @@ After the user approves the split:
 - Add matching main checklist steps to `todo.md`.
 - Create per-task artifact folders and files.
 
+Use `examples/full-mode/todo.md` as the checklist shape. Do not use a one-line-per-task todo for Full Mode. Each main task must expand into workflow checklist items. When the approved task plan has multiple implementation steps, mirror those granular implementation steps in `todo.md`; do not collapse them into a single `Implement behavior` item.
+
+Use the anonymous top-level examples in `examples/full-mode/` as file-shape references for `design.md`, `plan.md`, `todo.md`, `history.md`, and `workflow.md`.
+
 Do not fill detailed implementation notes into `plan.md` upfront. Fill each task section as that task is brainstormed and approved during execution.
 
 ## Full Mode Per-Task Artifacts
@@ -127,13 +131,16 @@ tasks/{YYYY-MM-DD-task-name}/artifacts/task-01/
   implementation-notes.md
   spec-review.md
   code-quality-review.md
+  <task-result>.md       # optional, for audit/research/benchmark/report outputs
 ```
 
 Use the same pattern for `task-02`, `task-03`, and so on.
 
 `code-quality-review.md` may stay empty or state that the user declined the optional review.
 
-When explaining or scaffolding the workflow, list the artifact files explicitly. Do not collapse this to only `artifacts/task-XX/`; the four files are part of the required structure.
+The task artifact folder may contain additional files when the task naturally produces a result artifact. Common examples include `analysis-report.md`, `audit-report.md`, `benchmark-results.md`, `research-notes.md`, screenshots, logs, generated reports, or other task outputs. For audit, research, benchmarking, source-evaluation, or similar tasks, create a clearly named result file in that task's artifact folder and include it in `todo.md` and `history.md`.
+
+When explaining or scaffolding the workflow, list the artifact files explicitly. Do not collapse this to only `artifacts/task-XX/`; the four required files plus any task-specific result files are part of the required structure for that task.
 
 ## Full Mode Task Execution Loop
 
@@ -143,7 +150,7 @@ For each main task:
 2. Wait for explicit user approval of the task-specific implementation approach.
 3. Only after approval, save the approved brainstorm to `artifacts/task-XX/brainstorm.md`.
 4. Persist the approved implementation plan into the task section of `plan.md` using writing-plans style: exact file paths, complete code where appropriate, and exact commands. Do not start implementation until this is written.
-5. Add the approved task implementation steps as checklist items to `todo.md` so progress is trackable.
+5. Add the approved task implementation steps as granular checklist items to `todo.md` so progress is trackable. If implementation has multiple concrete steps, each step must have its own checklist item.
 6. Write the failing test first.
 7. Implement with the main agent.
 8. Save implementation notes to `artifacts/task-XX/implementation-notes.md`.
