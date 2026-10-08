@@ -45,7 +45,7 @@ tasks/{YYYY-MM-DD-task-name}/
   history.md
 ```
 
-Do not create per-task artifact folders by default.
+Do not create per-step artifact folders by default.
 
 Only create an `artifacts/` folder if the task produces useful outputs, screenshots, logs, generated files, or review notes.
 

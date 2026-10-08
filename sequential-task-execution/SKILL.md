@@ -1,6 +1,6 @@
 ---
 name: sequential-task-execution
-description: Use when a user asks to execute an approved feature plan with task folders, TDD expectations, review requirements, artifacts, pause points between main tasks, or lightweight controlled execution for smaller changes.
+description: Use when a user asks to execute an approved feature plan with task folders, TDD expectations, review requirements, artifacts, pause points between steps, or lightweight controlled execution for smaller changes.
 ---
 
 # Sequential Task Execution
@@ -27,9 +27,9 @@ This skill relies on the following skills. Load the required skills before start
 | `using-superpowers` | Full Mode and Lite Mode | At the start of every session |
 | `brainstorming` | Full Mode | Before execution; design must be approved first |
 | `writing-plans` | Full Mode | Per task; persist implementation details into `plan.md` before coding |
-| `test-driven-development` | Full Mode and Lite Mode | For implementation tasks that change behavior |
+| `test-driven-development` | Full Mode and Lite Mode | For implementation steps that change behavior |
 | `verification-before-completion` | Full Mode and Lite Mode | Before marking any task done |
-| `requesting-code-review` | Full Mode | After each implementation task; spec review is mandatory, code-quality review is optional |
+| `requesting-code-review` | Full Mode | After each implementation step; spec review is mandatory, code-quality review is optional |
 | `receiving-code-review` | Full Mode | When review comes back with feedback |
 | `systematic-debugging` | Full Mode and Lite Mode | When a test fails or unexpected behavior blocks progress |
 
@@ -88,10 +88,10 @@ Controls included:
 - history.md update
 
 Controls omitted compared with Full Mode:
-- no per-task artifact folders by default
+- no per-step artifact folders by default
 - no mandatory spec review
 - no mandatory code-quality review
-- no required final documentation task unless behavior, setup, or API docs change
+- no required final documentation step unless behavior, setup, or API docs change
 
 Escalation:
 If the task reveals broader behavior, schema changes, auth/payment impact, or public API contract changes, stop and propose switching to Full Mode.
@@ -184,16 +184,16 @@ Do not switch modes until the user explicitly approves escalation.
 
 If the user introduces a new constraint during a task:
 
-1. Propose a compatibility plan for the current task.
+1. Propose a compatibility plan for the current step.
 2. Wait for explicit approval.
 3. Update the appropriate tracking file:
    - Product/design constraint: update `design.md` after approved replanning, then update `plan.md` and `todo.md` as needed.
-   - Project convention or workflow constraint in Full Mode: update `workflow.md` and current task checklist details in `todo.md`.
+   - Project convention or workflow constraint in Full Mode: update `workflow.md` and current step checklist details in `todo.md`.
    - Project convention or workflow constraint in Lite Mode: update `workflow.md`, `plan.md`, and `todo.md` when the constraint is important enough to track separately; otherwise update `plan.md` and `todo.md`.
 4. Implement the approved adjustment.
 5. Record the change in `history.md`.
 
-Do not proceed to the next task or completion until the current task respects the new constraint.
+Do not proceed to the next step or completion until the current step respects the new constraint.
 
 # Completion Standards
 

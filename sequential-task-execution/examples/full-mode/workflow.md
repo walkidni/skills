@@ -16,18 +16,18 @@ Do not use this file as the product behavior store.
 
 ## Approval Gates
 
-- Do not implement before the sequential task split is approved.
-- For each main task, present the task-specific implementation approach in chat first.
-- Wait for explicit user approval before writing that task's `brainstorm.md`, expanding `plan.md`, or adding detailed checklist items to `todo.md`.
-- Pause after each completed main task for user review.
-- After the user reviews and approves a closed task, commit that task before starting the next task.
+- Do not implement before the sequential step split is approved.
+- For each step, present the step-specific implementation approach in chat first.
+- Wait for explicit user approval before writing that step's `brainstorm.md`, expanding `plan.md`, or adding detailed checklist items to `todo.md`.
+- Pause after each completed step for user review.
+- After the user reviews and approves a closed step, commit that step before starting the next step.
 
 ## Reviews
 
 - Required reviews are controlled by this task folder's approved workflow.
 - If spec review is required, reviewers are read-only and must not edit files or task tracking.
-- If code-quality review is skipped, mark the task's `code-quality-review.md` artifact as skipped.
-- If a task is an audit, research task, benchmark, source evaluation, or similar result-producing task, add a clearly named result file under `artifacts/task-XX/` and track it in `todo.md` and `history.md`.
+- If code-quality review is skipped, mark the step's `code-quality-review.md` artifact as skipped.
+- If a task is an audit, research task, benchmark, source evaluation, or similar result-producing task, add a clearly named result file under `artifacts/step-XX/` and track it in `todo.md` and `history.md`.
 
 ## Testing
 

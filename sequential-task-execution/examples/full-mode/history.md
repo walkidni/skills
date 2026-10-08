@@ -15,48 +15,48 @@ Created skeleton task folder:
 
 No implementation has started.
 
-## YYYY-MM-DD - Task split approved
+## YYYY-MM-DD - Step split approved
 
-The user approved the sequential Full Mode task split.
+The user approved the sequential Full Mode step split.
 
-Added task sections to `plan.md` and main task checklist items to `todo.md`.
+Added task sections to `plan.md` and step checklist items to `todo.md`.
 
-Created required per-task artifact files for each task:
+Created required per-step artifact files for each step:
 
-- `artifacts/task-01/brainstorm.md`
-- `artifacts/task-01/implementation-notes.md`
-- `artifacts/task-01/spec-review.md`
-- `artifacts/task-01/code-quality-review.md`
-- `artifacts/task-02/brainstorm.md`
-- `artifacts/task-02/implementation-notes.md`
-- `artifacts/task-02/spec-review.md`
-- `artifacts/task-02/code-quality-review.md`
-- `artifacts/task-03/brainstorm.md`
-- `artifacts/task-03/implementation-notes.md`
-- `artifacts/task-03/spec-review.md`
-- `artifacts/task-03/code-quality-review.md`
+- `artifacts/step-01/brainstorm.md`
+- `artifacts/step-01/implementation-notes.md`
+- `artifacts/step-01/spec-review.md`
+- `artifacts/step-01/code-quality-review.md`
+- `artifacts/step-02/brainstorm.md`
+- `artifacts/step-02/implementation-notes.md`
+- `artifacts/step-02/spec-review.md`
+- `artifacts/step-02/code-quality-review.md`
+- `artifacts/step-03/brainstorm.md`
+- `artifacts/step-03/implementation-notes.md`
+- `artifacts/step-03/spec-review.md`
+- `artifacts/step-03/code-quality-review.md`
 
 Task artifact folders may include additional result files when the task produces an audit, research, benchmark, or analysis output. Example result artifact names include `analysis-report.md`, `audit-report.md`, `benchmark-results.md`, or `research-notes.md`.
 
 No implementation has started.
 
-## YYYY-MM-DD - Task 1 approach approved
+## YYYY-MM-DD - Step 1 approach approved
 
-The user approved the Task 1 approach for preference storage.
+The user approved the Step 1 approach for preference storage.
 
-Persisted the approved task-specific brainstorm to:
+Persisted the approved step-specific brainstorm to:
 
-- `artifacts/task-01/brainstorm.md`
+- `artifacts/step-01/brainstorm.md`
 
-Expanded the Task 1 section of `plan.md` with exact files, TDD steps, and verification commands.
+Expanded the Step 1 section of `plan.md` with exact files, TDD steps, and verification commands.
 
-Expanded `todo.md` with Task 1 execution checklist items, including granular implementation steps.
+Expanded `todo.md` with Step 1 execution checklist items, including granular implementation actions.
 
 No production implementation has started at this point.
 
-## YYYY-MM-DD - Task 1 closed
+## YYYY-MM-DD - Step 1 closed
 
-Implemented Task 1: Preference Storage.
+Implemented Step 1: Preference Storage.
 
 Code changes:
 
@@ -78,4 +78,4 @@ Review:
 
 - Required reviews were completed or marked skipped according to `workflow.md`.
 
-User approved Task 1 closure and requested a commit before continuing.
+User approved Step 1 closure and requested a commit before continuing.

@@ -4,9 +4,9 @@ Design source of truth:
 
 - `tasks/YYYY-MM-DD-notification-preferences/design.md`
 
-## Approved Task Split
+## Approved Step Split
 
-### Task 1: Preference Storage
+### Step 1: Preference Storage
 
 Status: approved for implementation.
 
@@ -51,7 +51,7 @@ Production files:
 - Create `app/Services/NotificationPreferenceDefaults.php`
 - Create `database/migrations/YYYY_MM_DD_000001_create_notification_preferences_table.php`
 
-Implementation steps:
+Implementation actions:
 
 1. Write the failing storage/defaults test.
 2. Run focused red verification:
@@ -65,9 +65,9 @@ Implementation steps:
    - `php artisan test --filter=NotificationPreferenceStorageTest`
 8. Save implementation notes and update task tracking.
 
-### Task 2: Preference Update API
+### Step 2: Preference Update API
 
-Status: pending task-specific approach approval.
+Status: pending step-specific approach approval.
 
 Target behavior:
 
@@ -95,9 +95,9 @@ Review criteria:
 - security alerts remain enabled;
 - response returns current state.
 
-### Task 3: Documentation
+### Step 3: Documentation
 
-Status: pending task-specific approach approval.
+Status: pending step-specific approach approval.
 
 Target behavior:
 
@@ -109,7 +109,7 @@ Primary test layer:
 
 Expected failing test:
 
-- not applicable; documentation task.
+- not applicable; documentation step.
 
 Implementation scope:
 
