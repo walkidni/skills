@@ -4,7 +4,7 @@ A personal collection of agentic skills by Walid KINI, compatible with [Claude C
 
 ## Installation
 
-Clone this repository:
+Clone this repository: 
 
 ```bash
 git clone https://github.com/walkidni/skills
